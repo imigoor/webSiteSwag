@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/imgs/icone.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>SWAG</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="row">
+        <div class="logo">
+          <a href="home.html">
+            <img src="/imgs/logo.jpg" alt="Swag" width="60" height="55" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Carrinho</a></li>
+            <li>
+              <a class="nav-link-active" href="/telaLogin/telaLogin.html">
+                <span id="logado"></span>
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="secondary-nav">
+      <div class="row">
+        <div class="secondary-nav-links">
+          <ul>
+            <li>
+              <a href="#">Promoções</a>
+              <ul>
+                <li><a href="#">Masculinas</a></li>
+                <li><a href="#">Femininas</a></li>
+                <li><a href="#">Infantis</a></li>
+                <li><a href="#">Calçados</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Feminino</a>
+              <ul>
+                <li>
+                  <a href="#"><strong>Mais Vendidos</strong></a>
+                </li>
+                <li><a href="#">Croppeds</a></li>
+                <li><a href="#">Bermudas e shorts</a></li>
+                <li><a href="#">Moletons</a></li>
+                <li><a href="#">Bolsas</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Masculino</a>
+              <ul>
+                <li>
+                  <a href="#"><strong>Mais Vendidos</strong></a>
+                </li>
+                <li><a href="#">Calças</a></li>
+                <li><a href="#">Tênis</a></li>
+                <li><a href="#">Moletons</a></li>
+                <li><a href="#">Regatas</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="secondary-nav-links">
+          <ul>
+            <li><a href="#">Fale Conosco</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/imgs/Oferta.png" alt="Banner" />
+    </div>
+    <div class="barra">
+      <h1>Nova Coleção de Verão</h1>
+    </div>
+    <div class="box">
+      <div class="oferta">
+        <h2>CAMISAS</h2>
+        <img src="/imgs/camisas.jpg" alt="Camisa" />
+        <div class="compra">
+          <input type="button" value="COMPRAR AGORA ->" />
+        </div>
+      </div>
+      <div class="oferta">
+        <h2>CALÇAS</h2>
+        <img src="/imgs/roupa5.jpg" alt="Calça" />
+        <div class="compra">
+          <input type="button" value="COMPRAR AGORA ->" />
+        </div>
+      </div>
+      <div class="oferta">
+        <h2>SAPATOS</h2>
+        <img src="/imgs/Sapatos.jpg" alt="Sapato" />
+        <div class="compra">
+          <input type="button" value="COMPRAR AGORA ->" />
+        </div>
+      </div>
+    </div>
+    <div class="destaques">
+      <h1>DESTAQUES</h1>
+      <div class="clothes">
+        <div class="roupa">
+          <a href="/compra/index.html">
+            <img src="/imgs/roupa1.jpg" alt="Camisa preta" />
+            <h3>CAMISETA PRETA - SWAG</h3>
+            <h5>DE: R$79,99</h5>
+            <h4>POR R$59,90</h4>
+          </a>
+        </div>
+        <div class="roupa">
+          <a href="#">
+            <img src="/imgs/roupa2.jpg" alt="Camisa branca" />
+            <h3>CAMISETA BRANCA - SWAG</h3>
+            <h5>DE: R$79,99</h5>
+            <h4>POR R$59,90</h4>
+          </a>
+        </div>
+
+        <div class="roupa">
+          <a href="#">
+            <img src="/imgs/roupa3.jpg" alt="Camisa marrom" />
+            <h3>CAMISETA MARROM - SWAG</h3>
+            <h5>DE: R$79,99</h5>
+            <h4>POR R$59,90</h4>
+          </a>
+        </div>
+
+        <div class="roupa">
+          <a href="#">
+            <img src="/imgs/roupa4.jpg" alt="Camisa vermelha" />
+            <h3>CAMISETA VERMELHA - SWAG</h3>
+            <h5>DE: R$79,99</h5>
+            <h4>POR R$59,90</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <div class="contact">
+        <h2>Fale conosco</h2>
+        <br />
+        <p>E-mail: Swagcontact@gmail.com</p>
+        <p>Telefone: (83)2298-2004</p>
+        <br/>
+        <h1>Swag mantendo seu estilo!</h1>
+      </div>
+    </div>
+    <script>
+      let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+  
+      let logado = document.querySelector('#logado')
+  
+      logado.innerHTML = 'Olá, ' + userLogado.nome
+  
+      if(localStorage.getItem('token') == null) {
+         alert("Você precisa estar logado para acessar essa página") 
+         window.location.href = 'http://127.0.0.1:5501/telaLogin.html'
+      }
+  
+      function sair() {
+          localStorage.removeItem('token')
+          window.location.href = 'http://127.0.0.1:5501/telaLogin.html'
+      }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+} 
+
+body { 
+    background: #FFFFFF;
+    width: 100%;
+    height: 300px;
+    /*background-image: url(/imagens/download.png);
+    AQUI COLOCA COR OU IMAGEM PARA O FUNDO DO LOGIN*/
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+    position: relative;
+}
+/*
+.container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(/imagens/fundoUrso-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position-x: 486px;
+    background-position-y: 180px; 
+    background-size: 600px;
+    opacity: 0.55;
+}
+*/
+img {
+    position: absolute;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-46.6%, -53%);
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.card {
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px #000000;/*OU #00000090*/
+    z-index: 2;   
+}
+
+h1 { 
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    border-radius: none;
+}
+
+.label-float {
+    position: relative;
+    margin-top: 13px;
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #737373;
+}
+
+.label-float label {
+    color: #000000;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 13px 0px 0px 0px;
+    transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #737373;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border: none;
+    color: #FAFAFA;
+    background-color: #000000;
+    padding: 7px 40px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #000000;
+    transition: all 0.3s ease-out;
+}
+
+hr {
+    margin: 20px 0px 20px 0px;
+    width: 65%; 
+    border-bottom: 2px solid #000000;
+    border-radius: 20px;
+}
+
+.descrition {
+    color: #000000;
+    font-size: 14pt;
+}
+
+.descritionLink {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.descritionLink:hover {
+    color: #737373;
+    transition: all 0.3s ease-out;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 17px;
+    right: 1px;
+    cursor: pointer;
+    color: #000000;
+}
+
+/*MENSAGEM DE ERRO*/
+#msgError {
+    text-align: center;
+    color: #FF0000;
+    background-color: transparent;
+    border: 2px solid #FF0000;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSuccess {
+    text-align: center;
+    color: #00BB00;
+    background-color: transparent;
+    border: 2px solid #00BB00;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}

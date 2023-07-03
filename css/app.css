@@ -1,0 +1,205 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+}
+
+.row {
+  width: 80%;
+  height: auto;
+  background-color: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav-links ul {
+  list-style-type: none;
+}
+
+.nav-links ul li {
+  display: inline-block;
+}
+
+.nav-links li a {
+  padding: 14px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #999;
+}
+
+#secondary-nav {
+  width: 100%;
+  height: auto;
+  padding: 2px 0px;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondary-nav-links ul {
+  list-style-type: none;
+}
+
+.secondary-nav-links ul li {
+  display: inline;
+  position: relative;
+}
+
+.secondary-nav-links ul li a {
+  padding: 14px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  transition: background .3s;
+}
+
+.secondary-nav-links li a:hover {
+  background-color: #737373;
+}
+
+/* sub menu */
+.secondary-nav-links ul ul {
+  display: none;
+  position: absolute;
+  left: 0 ;
+}
+.secondary-nav-links ul li:hover ul {
+  display: block;
+  background-color: #737373;
+}
+.secondary-nav-links ul ul {
+  width: 150px; 
+}
+.secondary-nav-links ul ul li a {
+  display: block;
+}
+/* sub menu */
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.container img {
+  width: 100%;
+}
+
+.box{
+  display: flex;
+  text-align: center;
+  padding: 5%;
+  border-bottom: 2px solid rgb(225, 225, 225);
+}
+
+.barra h1{
+  text-align: center;
+  padding: 30px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.oferta{
+  width: 100%;
+  height: auto;
+}
+
+.oferta img{
+  width: 350px;
+  height: 300px;
+  position: relative;
+  left: 30px;
+  right: 30px;
+}
+
+input {
+  background-color: #000;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+input:hover {
+  background-color: #444;
+}
+
+.compra {
+  margin-left: 50px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+h2{
+  padding-left: 75px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.destaques{
+  background-color: white;
+  width: 100%;
+}
+
+.destaques h1 {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.clothes {
+  margin: 5% 2%;
+}
+
+.clothes img {
+  width: 100%;
+}
+
+.clothes {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.roupa h3, h4, h5, h6 {
+  text-align: center;
+  line-height: 25px;
+}
+
+.roupa h5 {
+  color: #848484;
+  text-decoration: line-through;
+}
+
+.rodape{
+  background-color: #000;
+  width: 100%;
+  padding-bottom: 1.8%;
+}
+
+.contact {
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.contact h2 {
+  padding-left: 0%;
+  padding-top: 3%;
+}
